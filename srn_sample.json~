@@ -1,0 +1,22 @@
+{
+    "Name":"SRN",
+    "HostRootPath": "/opt/SNPE/snpe-1.19.2/models/srn/srnnet",
+    "HostResultsDir":"/opt/SNPE/snpe-1.19.2/models/srn/srnnet/results16&32",
+    "DevicePath":"/data/local/tmp/snpebm",
+    "Devices":["a28cdb00"],
+    "HostName": "localhost",
+    "Runs":5,
+
+    "Model": {
+        "Name": "SRN",
+        "Dlc": "/opt/SNPE/snpe-1.19.2/models/srn/dlc/srn_model_3L_16-32_0104_1.dlc",
+        "InputList": "/opt/SNPE/snpe-1.19.2/models/srn/data/cropped/raw_list_benchmarking.txt",
+        "Data": [
+            "/home/sunny/raw"
+        ]
+    },
+
+    "Runtimes":["GPU", "GPU_FP16", "DSP", "CPU"],
+    "Measurements": ["timing"]
+
+ }
